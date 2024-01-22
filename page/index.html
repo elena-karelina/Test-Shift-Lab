@@ -1,11 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shift Lab</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="wrapper">
+        <div class="search">
+            <div>
+                <span>Искать по:</span>
+                <select>
+                    <option>Фамилия</option>
+                    <option>Имя</option>
+                    <option>Отчество</option>
+                    <option>Адрес</option>
+                    <option>Возраст</option>
+                </select>
+            </div>
+            <div>
+                <input type="text" id="name">
+            <button>Найти</button>
+            </div>
+            <div><span>Количество совпадений в таблице: <span id="quantity"> </span></span> </div>
+            
+        </div>
+        <div class="table">
+        <div class="row headers">
+            <div class="cell"> Фамилия </div>
+            <div class="cell"> Имя </div>
+            <div class="cell">Отчество </div>
+            <div class="cell"> Адрес </div>
+            <div class="cell"> Возраст</div>
+        </div>
+        <div class="row">
+            <div class="cell" data-header="Фамилия"> Иванов </div>
+            <div class="cell" data-header="Имя"> Иван </div>
+            <div class="cell" data-header="Отчество"> Иванович </div>
+            <div class="cell" data-header="Адрес"> ул. Ленина, 25</div>
+            <div class="cell" data-header="Возраст"> 30 </div>
+        </div>
+        <div class="row">
+            <div class="cell" data-header="Фамилия"> Петрова</div>
+            <div class="cell" data-header="Имя">Елена</div>
+            <div class="cell" data-header="Отчество">Денисовна</div>
+            <div class="cell" data-header="Адрес">пр. Победы, 10</div>
+            <div class="cell" data-header="Возраст">45</div>
+        </div>
+        <div class="row">
+            <div class="cell" data-header="Фамилия">Сидоров</div>
+            <div class="cell" data-header="Имя">Алексей</div>
+            <div class="cell" data-header="Отчество">Петрович</div>
+            <div class="cell" data-header="Адрес"> ул. Центральная, 5</div>
+            <div class="cell" data-header="Возраст">28</div>
+        </div>
+        <div class="row">
+            <div class="cell" data-header="Фамилия">Михайлова</div>
+            <div class="cell" data-header="Имя">Ольга</div>
+            <div class="cell" data-header="Отчество">Сергеевна</div>
+            <div class="cell" data-header="Адрес">пр. Мира, 7</div>
+            <div class="cell" data-header="Возраст">24</div>
+        </div>
+    </div>
+    </div>
     
 </body>
 </html>
