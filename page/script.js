@@ -13,7 +13,7 @@ function handleSearchButtonClick() {
     
 
     allCells.forEach(function(cell) {
-        cell.style.color = 'initial';
+        cell.style.color = '#E4E4E4';
     });
 
     cells.forEach(function(cell) {
