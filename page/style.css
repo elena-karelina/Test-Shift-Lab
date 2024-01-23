@@ -48,6 +48,10 @@ button{
     padding: 5px;
 }
 @media (max-width: 420px) {
+    body{
+        height: auto;
+        padding-top: 20px;
+    }
     .row{
         grid-template-columns: 100%;
         grid-auto-rows: minmax(50px, auto);
@@ -62,9 +66,7 @@ button{
         content: attr(data-header); /* Вставляем заголовок в контент ячеек */
         margin-bottom: 5px;
         font-style: italic;
-        font-weight: 550;
-        
+        font-weight: 550; 
     }
-
 }
 
