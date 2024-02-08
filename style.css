@@ -62,7 +62,7 @@ button{
 @media (max-width: 420px) {
     body{
         height: auto;
-        padding-top: 20px;
+        padding-block: 30px;
     }
     .row{
         grid-template-columns: 100%;
